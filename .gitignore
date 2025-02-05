@@ -1,0 +1,42 @@
+# Node.js and package manager files
+node_modules/          # Ignore node_modules folder (dependencies installed by npm/yarn)
+npm-debug.log*         # Ignore npm debug log
+yarn-debug.log*        # Ignore yarn debug log
+yarn-error.log*        # Ignore yarn error log
+
+# Build output files
+/dist/                 # Ignore dist folder (for compiled code or build files)
+build/                 # Ignore build folder
+*.tsbuildinfo          # Ignore TypeScript build information
+
+# IDE and OS-specific files
+.vscode/               # Ignore VSCode workspace settings folder
+.idea/                 # Ignore JetBrains IDE settings folder
+*.swp                  # Ignore swap files (e.g., Vim editor)
+*.suo                  # Ignore Visual Studio files
+
+# Operating System files
+.DS_Store              # macOS specific file
+Thumbs.db              # Windows specific file
+
+# Python environment files (if using Python for model training)
+*.pyc                  # Ignore Python compiled bytecode files
+*.pyo                  # Ignore Python optimized files
+__pycache__/           # Ignore Python cache folder
+
+# Logs and temporary files
+*.log                  # Ignore log files
+*.tmp                  # Ignore temporary files
+
+# AI models and datasets
+/models/               # Ignore folder for storing machine learning models
+/data/                 # Ignore the raw data folder
+*.h5                   # Ignore Keras/TensorFlow models saved as .h5 files
+
+# Config and secrets (make sure not to expose sensitive data)
+.env                   # Ignore environment configuration files
+.env.local             # Ignore local environment files
+*.env.*                # Ignore any other environment variable files
+
+# Miscellaneous
+*.bak                  # Ignore backup files
